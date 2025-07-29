@@ -7,14 +7,14 @@ const initalState = {
 
 const dataReducer = (state=initalState, action) => {
     switch(action.type) {
-        case FETCH_DATA:
-            return { ...state, posts: action.payload};
+        case FETCH_DATA:   
+            return { ...state, posts: action.payload}; 
         case DELETE_DATA: 
-            return {...state, posts: null};  
+            return {...state, posts: null};    
         case ADD_DATA: 
             return {...state, posts: action.payload};
         default: 
-            return state;             
+            return state;               
     }
 }
 
