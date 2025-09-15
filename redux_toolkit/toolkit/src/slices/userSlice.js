@@ -19,7 +19,7 @@ export const deleteUsers = createAsyncThunk(
 )
 const usersSlice = createSlice({
     name: 'user',
-    initialState: {   
+    initialState: {     
         user: [],     
         status: "idle",
         error: null,  
@@ -40,10 +40,10 @@ const usersSlice = createSlice({
         state.status = "rejected";
         state.user = action.error.message;
        }) 
-       //delete 
-       .addCase(deleteUsers.pending, (state) => {
+       //delete    
+       .addCase(deleteUsers.pending, (state) => {  
         state.status = "pending"
-       })  
+       })   
        .addCase(deleteUsers.fulfilled, (state, action) => {
         state.status = "fulfilled",
         state.user = state.user.filter((user) => user.id!== action.payload)

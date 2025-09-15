@@ -15,7 +15,7 @@ function GetData() {
         
      const deleteDatas = () => dispatch(deleteData());      
      const dataUpdated = useSelector((state) => state.data);           
-     console.log(dataUpdated)   
+     console.log(dataUpdated)           
      return (
         <>
         <div>
@@ -25,15 +25,15 @@ function GetData() {
         </div>
          <div>
             { posts.posts && <ul>
-             {posts.posts.map((item,index) => (
+             {posts.posts.map((item,index) => (   
                    
-                <li key={index}> {item.title} <br/> {item.body}</li>
-            
+                <li key={index}> {item.title} <br/> {item.body}</li>      
+                
                  
-             ))}     
-             </ul>}
+             ))}            
+             </ul>} 
              
-         </div>   
+         </div>       
         </>
      )
 }

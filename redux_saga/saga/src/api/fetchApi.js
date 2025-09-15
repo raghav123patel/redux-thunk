@@ -6,7 +6,9 @@ const apiFetching = () => {
     }
     catch(error){
         console.log("error in fetching the api", error);
-    }
+    }  
 }
+     
 
-export default apiFetching;
+ 
+export default apiFetching;    

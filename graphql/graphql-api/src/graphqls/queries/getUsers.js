@@ -5,24 +5,24 @@ query Countries  {
        {
        currency
     currencyName
-    currencySymbol
+    currencySymbol  
      
-
-      }     
-          
+  
+      }            
+            
 
 }
-`
+`  
 
 export const GET_CITIES = gql`
    query Cities($citiesId: ID!){
    cities(id: $citiesId){
          id 
-         name
+         name                     
    }
-   }  
+   }         
 `
-
+     
 
 export const GET_COUNTRIESDETAIL = gql`
 
@@ -33,5 +33,19 @@ query countriesDetail {
       currency
       }
 }
+`
+
+export const GET_COUNTRIES = gql`
+   query CountriesDetails {
+   countries { 
+
+     name
+     phoneCode
+     currencyName
+     currencySymbol
+     currency
+   }
+   }
+
 `
 export default GET_PRODUCTS;  

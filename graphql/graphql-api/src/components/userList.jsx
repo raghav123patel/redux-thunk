@@ -6,13 +6,13 @@ const {loading, data, error} = useQuery(GET_PRODUCTS);
 if(loading ) return <p>Loading books....</p>
 if(error) return <p>error: {error.message}</p>
 console.log(data,"dasjfkljfl");
-return(
+return(   
     <ul>
         {data.countries.map((item,index) => (
             <li key={index}>{item.__typename} <br/> {item.currency} <br/> {item.currencySymbol}</li>
         ))}    
-    </ul>     
-)  
-}
+    </ul>      
+)      
+}          
 
-export default ProductList;  
+export default ProductList;        

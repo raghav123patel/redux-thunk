@@ -11,9 +11,14 @@ function UserData() {
     console.log(posts);  
     return(
         <>
+        <div>
         <h1> fetch data from the api</h1>
         <button onClick={handleClick}> GET DATA</button>
-        </>
+        </div>   
+        <div>   
+              
+        </div>
+        </>       
     )
 }
 

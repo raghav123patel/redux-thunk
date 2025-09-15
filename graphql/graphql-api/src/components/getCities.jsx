@@ -10,6 +10,6 @@ function GetCities() {
  if(loading ) return <p>Loading city....</p>
 if(error) return <p>error: {error.message}</p>
 console.log(data,"dasjfkljfl");         
-}
+}      
 
-export default GetCities;                         
+export default GetCities;                                         

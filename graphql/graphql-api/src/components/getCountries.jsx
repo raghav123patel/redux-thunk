@@ -11,10 +11,10 @@ function GetCountries() {
         <ul>
             {data.countries.map((item,index) => (
                 <li key={index} > {item.phoneCode} <br/> {item.name} <br/> {item.currency}</li>     
-            ))}       
-        </ul>             
+            ))}                         
+        </ul>                
         </>   
-    )
+    )                 
 }  
 
-export default GetCountries;
+export default GetCountries; 

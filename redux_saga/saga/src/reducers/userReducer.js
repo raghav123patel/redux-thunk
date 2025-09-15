@@ -1,6 +1,6 @@
 
 import  {USER_FETCH_REQUESTED, USER_FETCH_SUCCESS, USER_FETCH_FAILURE} from "../action/userAction";
-import { combineReducers } from "redux";
+
 const initialState = {
     user: [],
     loading: false,
@@ -9,7 +9,7 @@ const initialState = {
 
 function userReducers(state = initialState, action) {
     switch(action.type) {
-        case USER_FETCH_REQUESTED: 
+        case USER_FETCH_REQUESTED:  
         return {...state, loading: true, error: null};
         case USER_FETCH_SUCCESS :
         return {...state, loading: false, user: action.payload}
@@ -22,7 +22,5 @@ function userReducers(state = initialState, action) {
 }
 
 
-const rootReducer = combineReducers({
-    user: userReducers
-})
-export default rootReducer;
+
+export default userReducers; 

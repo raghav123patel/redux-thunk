@@ -6,9 +6,9 @@
         register(name: $name, email: $email, password: $password){
            email
            name
-           password
+           password            
         }              
-        }      
+        }          
   `
 
-export default ADD_USER;
+export default ADD_USER;  

@@ -12,6 +12,11 @@ export const fetchUserSuccess = (user) => (
     {type: 'USER_FETCH_SUCCESS', payload: user})
 
 
-export const fetchUserFailure = (error) => (
-    {type: 'USER_FETCH_FAILURE', payload: error})
+export const fetchUserFailure = (error) => (   
+    {type: 'USER_FETCH_FAILURE', payload: error})      
+
+
+
+
+
 
